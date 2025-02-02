@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Vibhas Pandey</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .cover-background {
+            background: url('https://images.unsplash.com/photo-1649770638560-b0011db12a76?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            height: 300px;
+            object-fit: cover;
+            position: relative;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            position: absolute;
+            bottom: -75px;
+            left: 20px;
+            object-fit: cover;
+        }
+        .hero-content {
+            margin-left: 200px;
+            padding: 20px;
+            color: #ffffff;
+        }
+        .hero-text {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .button-primary {
+            background-color: #1d4ed8;
+            color: #ffffff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+        .button-primary:hover {
+            background-color: #2563eb;
+        }
+        .icon-large {
+            font-size: 3rem; /* Adjust this to make icons larger */
+        }
+        .icon-certificates {
+            color: #f59e0b; /* Orange color for Certificates */
+        }
+        .icon-projects {
+            color: #3b82f6; /* Blue color for Projects */
+        }
+        .icon-awards {
+            color: #10b981; /* Green color for Awards */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Vibhas Pandey</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                <li><a href="projects.html" class="hover:text-gray-200">Projects</a></li>
+                <li><a href="experience.html" class="hover:text-gray-200">Experience</a></li>
+                <li><a href="skills.html" class="hover:text-gray-200">Skills</a></li>
+                <li><a href="education.html" class="hover:text-gray-200">Education</a></li>
+                <li><a href="contact.html" class="hover:text-gray-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="cover-background flex items-center">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQH_64RG3WMnUA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720339347935?e=1729728000&v=beta&t=sH3WOmuU3bGyHk6GF544uCPlR_a5zYuKhMCwxTk5gTA" alt="Profile Picture" class="profile-pic">
+        <div class="hero-content">
+            <h2 class="text-4xl font-bold hero-text mb-4">Welcome to My Portfolio</h2>
+            <p class="text-lg hero-text mb-6">I'm Vibhas Pandey, a passionate Software Engineer with expertise in Web Development, Python, and more.</p>
+            <a href="projects.html" class="button-primary">Explore My Projects</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+        <div class="flex flex-wrap gap-8">
+            <div class="flex-1 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                <p class="text-lg">I am a dedicated B.Tech Computer Science student specializing in web development, system design, and cybersecurity. With a strong foundation in technologies like HTML, CSS, JavaScript, and Python, I am constantly exploring new tools and techniques to enhance my skills.</p>
+            </div>
+            <div class="flex-1 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-2xl font-semibold mb-4">My Expertise</h3>
+                <ul class="list-disc pl-5">
+                    <li>Front-end Development: HTML, CSS, JavaScript</li>
+                    <li>Back-end Development: Python, Node.js</li>
+                    <li>Frameworks: React.js, Express, Django</li>
+                    <li>Database : MySql, MongoDB</li>
+                    <li>Tools: Git, VS Code, Linux, Windows</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Highlights</h2>
+            <div class="flex justify-center gap-12">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-certificate icon-large icon-certificates mb-4"></i>
+                    <h3 class="text-xl font-semibold">Certificates</h3>
+                    <p class="text-lg">Completed multiple courses and received certificates from renowned platforms.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-project-diagram icon-large icon-projects mb-4"></i>
+                    <h3 class="text-xl font-semibold">Projects</h3>
+                    <p class="text-lg">Worked on various projects showcasing my skills in web development and more.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-award icon-large icon-awards mb-4"></i>
+                    <h3 class="text-xl font-semibold">Awards</h3>
+                    <p class="text-lg">Recognized for outstanding contributions and achievements in technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Vibhas Pandey. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

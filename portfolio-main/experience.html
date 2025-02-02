@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Vibhas Pandey</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(135deg, #f0f4ff, #ffffff);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .card:hover .icon {
+            color: #1e3a8a; /* Color change on hover */
+            transform: scale(1.1);
+        }
+        .card-content {
+            text-align: center;
+        }
+
+        /* Flexbox design for Workshops */
+        .workshop-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .workshop-card {
+            flex: 1 1 calc(33.333% - 1rem);
+            margin: 0.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .workshop-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Vibhas Pandey</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                <li><a href="projects.html" class="hover:text-gray-200">Projects</a></li>
+                <li><a href="experience.html" class="hover:text-gray-200">Experience</a></li>
+                <li><a href="skills.html" class="hover:text-gray-200">Skills</a></li>
+                <li><a href="education.html" class="hover:text-gray-200">Education</a></li>
+                <li><a href="contact.html" class="hover:text-gray-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Experience Section -->
+    <section class="container mx-auto py-20">
+        <h2 class="text-3xl font-bold text-center mb-8">My Experience</h2>
+
+        <!-- Experience 1 -->
+        <div class="card bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="flex items-center">
+                <i class="fas fa-laptop-code icon text-blue-500"></i>
+                <div class="ml-4">
+                    <h3 class="text-2xl font-bold mb-2">Web Development Intern - CodeAlpha</h3>
+                    <p class="text-gray-600">Worked on several web development projects during my internship, including responsive design and backend integration.</p>
+                    <p class="text-gray-600">Duration: May 2024 - August 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="card bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="flex items-center">
+                <i class="fas fa-project-diagram icon text-green-500"></i>
+                <div class="ml-4">
+                    <h3 class="text-2xl font-bold mb-2">System Design Workshop - Taught by Vishwa Mohan</h3>
+                    <p class="text-gray-600">Participated in a system design workshop, focusing on scalable service design like Google Maps.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="card bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="flex items-center">
+                <i class="fas fa-server icon text-yellow-500"></i>
+                <div class="ml-4">
+                    <h3 class="text-2xl font-bold mb-2">Backend Development Course - Physics Wallah</h3>
+                    <p class="text-gray-600">Completed a backend development course, with practical knowledge of various backend technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Section -->
+    <section class="container mx-auto py-20">
+        <h2 class="text-3xl font-bold text-center mb-8">Workshops</h2>
+
+        <!-- Flex Container for Workshops -->
+        <div class="workshop-container">
+
+            <!-- Workshop 1 -->
+            <div class="workshop-card bg-white rounded-lg shadow-lg p-6">
+                <div class="card-content">
+                    <i class="fas fa-shield-alt icon text-red-500"></i>
+                    <h3 class="text-2xl font-bold mb-2">Ethical Hacking Workshop</h3>
+                    <p class="text-gray-600">Gained insights into cybersecurity, ethical hacking techniques, and network security.</p>
+                </div>
+            </div>
+
+            <!-- Workshop 2 -->
+            <div class="workshop-card bg-white rounded-lg shadow-lg p-6">
+                <div class="card-content">
+                    <i class="fas fa-database icon text-purple-500"></i>
+                    <h3 class="text-2xl font-bold mb-2">Data-Driven Decision Making Workshop</h3>
+                    <p class="text-gray-600">Learned how to make informed decisions using data analytics and visualization tools.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Vibhas Pandey. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
